@@ -1,4 +1,7 @@
 <?php
+
+namespace PhpCli\Lib;
+
 /**
  * PHP CLI Progress bar
  *
@@ -89,7 +92,7 @@ class ProgressBar
         $now = time();
 
         if (self::$total) {
-            $fractionComplete = (double) (self::$done / self::$total);
+            $fractionComplete = (float) (self::$done / self::$total);
         } else {
             $fractionComplete = 0;
         }

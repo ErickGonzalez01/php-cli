@@ -1,8 +1,12 @@
 #!/usr/bin/php
 <?php
+require 'vendor/autoload.php';
+
+use PhpCli\Cli\PhpCli;
+
     ini_set('display_errors', 1);
     
-    include('PhpCli.class.php');
+    //include('PhpCli.class.php');
 
     $options = array(array('v', 'Verbose Message', false),
                      array('date', 'Date of Report (YYYY-MM-DD)', true, '[0-9]{4}-[0-9]{2}-[0-9]{2}'));

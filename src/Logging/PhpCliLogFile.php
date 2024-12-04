@@ -1,6 +1,8 @@
 <?php
 
-require_once(dirname(__FILE__).'/../logging/PhpCliLog.class.php');
+namespace PhpCli\Logging;
+
+use PhpCli\Exception\PhpCliLogException;
 
 class PhpCliLogFile extends PhpCliLog
 {
